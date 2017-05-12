@@ -1,0 +1,106 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>PHPCore</Name>
+    <ProjectGuid>20e14105-4950-4657-b356-91f96b3667eb</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>PHPCore</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="autoload.php" />
+    <Compile Include="Core\Client.php" />
+    <Compile Include="Core\Conditions.php" />
+    <Compile Include="Core\Database\Data.php" />
+    <Compile Include="Core\Database\Database.php" />
+    <Compile Include="Core\Database\DataTable.php" />
+    <Compile Include="Core\Database\MySQL.php" />
+    <Compile Include="Core\Database\StaticDataTable.php" />
+    <Compile Include="Core\DateTime.php" />
+    <Compile Include="Core\Http\Exceptions\BadRequestException.php" />
+    <Compile Include="Core\Http\Exceptions\ClientErrorException.php" />
+    <Compile Include="Core\Http\Exceptions\ForbiddenException.php" />
+    <Compile Include="Core\Http\Exceptions\NotFoundException.php" />
+    <Compile Include="Core\Http\Exceptions\UnauthorizedException.php" />
+    <Compile Include="Core\IWebApp.php" />
+    <Compile Include="Core\MVC\IController.php" />
+    <Compile Include="Core\MVC\MVC.php" />
+    <Compile Include="Core\MVC\Viewer.php" />
+    <Compile Include="WMS\Admin\Users\User.php" />
+    <Compile Include="WMS\Controller\Admin\Main.php" />
+    <Compile Include="WMS\Controller\Admin\Navigation.php" />
+    <Compile Include="WMS\Controller\Admin\User.php" />
+    <Compile Include="WMS\Viewer\404.php" />
+    <Compile Include="WMS\Viewer\AdminViewer.php" />
+    <Compile Include="WMS\Viewer\Admin\DataTablePage.php" />
+    <Compile Include="WMS\Viewer\Admin\DataTablePanel.php" />
+    <Compile Include="WMS\Viewer\Admin\Home.php" />
+    <Compile Include="WMS\Viewer\Admin\Main.php" />
+    <Compile Include="WMS\Viewer\Admin\PageWrapper.php" />
+    <Compile Include="WMS\Viewer\Admin\User\ActiveAccount.php" />
+    <Compile Include="WMS\Viewer\Admin\User\Login.php" />
+    <Compile Include="WMS\Viewer\Viewer.php" />
+    <Compile Include="WMS\WMS.php" />
+    <Compile Include="Core\Rand.php" />
+    <Compile Include="Core\Request.php" />
+    <Compile Include="Core\String.php" />
+    <Compile Include="Core\UserManagement\Session.php" />
+    <Compile Include="Core\UserManagement\User.php" />
+    <Compile Include="Core\UserManagement\UserException.php" />
+    <Compile Include="Core\UserManagement\UserManagement.php" />
+    <Compile Include="index.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core\" />
+    <Folder Include="Core\Database\" />
+    <Folder Include="Core\Http\" />
+    <Folder Include="Core\Http\Exceptions\" />
+    <Folder Include="Core\MVC\" />
+    <Folder Include="Core\UserManagement\" />
+    <Folder Include="css\" />
+    <Folder Include="fonts\" />
+    <Folder Include="js\" />
+    <Folder Include="WMS\" />
+    <Folder Include="WMS\Admin\" />
+    <Folder Include="WMS\Admin\Users\" />
+    <Folder Include="WMS\Controller\" />
+    <Folder Include="WMS\Controller\Admin\" />
+    <Folder Include="WMS\Viewer\" />
+    <Folder Include="WMS\Viewer\Admin\" />
+    <Folder Include="WMS\Viewer\Admin\User\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".htaccess" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-2.2.4.min.js" />
+    <Content Include="js\jquery-3.1.1.min.js" />
+    <Content Include="js\wms.js" />
+    <Content Include="web.config" />
+  </ItemGroup>
+</Project>
