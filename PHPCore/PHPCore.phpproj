@@ -25,6 +25,7 @@
     <Compile Include="autoload.php" />
     <Compile Include="Core\Client.php" />
     <Compile Include="Core\Conditions.php" />
+    <Compile Include="Core\Database\Config.php" />
     <Compile Include="Core\Database\Data.php" />
     <Compile Include="Core\Database\Database.php" />
     <Compile Include="Core\Database\DataTable.php" />
