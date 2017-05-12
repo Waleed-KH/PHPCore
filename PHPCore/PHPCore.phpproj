@@ -74,6 +74,7 @@
     <Folder Include="Core\UserManagement\" />
     <Folder Include="css\" />
     <Folder Include="fonts\" />
+    <Folder Include="images\" />
     <Folder Include="js\" />
     <Folder Include="WMS\" />
     <Folder Include="WMS\Admin\" />
@@ -122,6 +123,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="images\default-avatar-small.png" />
+    <Content Include="images\default-avatar.png" />
     <Content Include="js\bootbox.js" />
     <Content Include="js\bootbox.min.js" />
     <Content Include="js\bootstrap-datepicker.js" />
