@@ -11,7 +11,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>WMS</title>
 	<link rel="stylesheet" href="/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/css/icons.css">
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<!--<link rel="stylesheet" href="/css/bootstrap-theme.min.css">-->
 	<link rel="stylesheet" href="/css/jquery-ui.min.css">
@@ -21,12 +20,11 @@
 	<link rel="stylesheet" href="/css/select2-bootstrap.min.css">
 	<!--<link rel="stylesheet" href="/css/jquery.fileupload.min.css">-->
 	<link rel="stylesheet" href="/css/notify.min.css">
-	<link rel="stylesheet" href="/css/wms-admin/datatables.min.css">
-	<link rel="stylesheet" href="/css/animate.css">
+	<link rel="stylesheet" href="/css/datatables.min.css">
 	<link rel="stylesheet" href="/css/bootstrap-switch.min.css">
 	<link rel="stylesheet" href="/css/bootstrap-select.min.css">
 	<link rel="stylesheet" href="/css/bootstrap-datepicker3.min.css">
-	<link rel="stylesheet" href="/css/wms-admin/main.min.css">
+	<link rel="stylesheet" href="/css/main.min.css">
 	<script src="/js/modernizr-2.8.3.min.js"></script>
 	<script src="/js/jquery-2.2.4.min.js"></script>
 	<script src="/js/jquery-ui.min.js"></script>

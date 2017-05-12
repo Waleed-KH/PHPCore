@@ -8,8 +8,13 @@ class Database
 
 	public static function InitializeConnection()
 	{
-		self::$mysql = new MySQL('localhost', 'root', '', '', 3306);
+		require_once CORE_DIR . 'Database' . DS . 'Config.php' ;
+		self::$mysql = new MySQL($DbConfig['HOST'], $DbConfig['USERNAME'], $DbConfig['PASSWORD'], $DbConfig['DBNAME'], $DbConfig['PORT']);
+		unset($DbConfig);
 		self::$mysql->connect();
+		self::$mysql->rawQuery('SET time_zone = \'+00:00\';');
+		//self::$mysql = new MySQL('localhost', 'root', '', '', 3306);
+		//self::$mysql->connect();
 	}
 
 	public static function Get($tableName, $numRows = null, $columns = '*')

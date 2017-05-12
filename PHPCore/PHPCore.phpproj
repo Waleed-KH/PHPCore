@@ -8,6 +8,12 @@
     </RootNamespace>
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
     <AssemblyName>PHPCore</AssemblyName>
+    <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
+    <Runtime>PHP</Runtime>
+    <RuntimeVersion>5.6</RuntimeVersion>
+    <EnvName>IISExpress</EnvName>
+    <PHPDevHostName>localhost</PHPDevHostName>
+    <PHPDevAutoPort>true</PHPDevAutoPort>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <IncludeDebugInformation>true</IncludeDebugInformation>
@@ -19,6 +25,7 @@
     <Compile Include="autoload.php" />
     <Compile Include="Core\Client.php" />
     <Compile Include="Core\Conditions.php" />
+    <Compile Include="Core\Database\Config.php" />
     <Compile Include="Core\Database\Data.php" />
     <Compile Include="Core\Database\Database.php" />
     <Compile Include="Core\Database\DataTable.php" />
@@ -79,12 +86,31 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".htaccess" />
+    <Content Include="css\bootstrap-datepicker3.css" />
+    <Content Include="css\bootstrap-datepicker3.css.map" />
+    <Content Include="css\bootstrap-datepicker3.min.css" />
+    <Content Include="css\bootstrap-select.css" />
+    <Content Include="css\bootstrap-select.css.map" />
+    <Content Include="css\bootstrap-select.min.css" />
+    <Content Include="css\bootstrap-switch.min.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.css.map" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="css\datatables.css" />
+    <Content Include="css\datatables.min.css" />
     <Content Include="css\font-awesome.css" />
     <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\jquery-ui.min.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\main.min.css" />
+    <Content Include="css\metisMenu.min.css" />
+    <Content Include="css\notify.css" />
+    <Content Include="css\notify.min.css" />
+    <Content Include="css\select2-bootstrap.css" />
+    <Content Include="css\select2-bootstrap.min.css" />
+    <Content Include="css\select2.css" />
+    <Content Include="css\select2.min.css" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
@@ -96,10 +122,47 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="js\bootbox.js" />
+    <Content Include="js\bootbox.min.js" />
+    <Content Include="js\bootstrap-datepicker.js" />
+    <Content Include="js\bootstrap-datepicker.min.js" />
+    <Content Include="js\bootstrap-select.js" />
+    <Content Include="js\bootstrap-select.js.map" />
+    <Content Include="js\bootstrap-select.min.js" />
+    <Content Include="js\bootstrap-switch.min.js" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\bootstrap3-typeahead.js" />
+    <Content Include="js\bootstrap3-typeahead.min.js" />
+    <Content Include="js\datatables.js" />
+    <Content Include="js\datatables.min.js" />
+    <Content Include="js\dataTables.rowsGroup.js" />
+    <Content Include="js\dataTables.rowsGroup.min.js" />
     <Content Include="js\jquery-2.2.4.min.js" />
     <Content Include="js\jquery-3.1.1.min.js" />
+    <Content Include="js\jquery-ui.min.js" />
+    <Content Include="js\jquery.easing.min.js" />
+    <Content Include="js\jquery.easing.min.min.js" />
+    <Content Include="js\jquery.form.js" />
+    <Content Include="js\jquery.form.min.js" />
+    <Content Include="js\jquery.form.min.js.gz" />
+    <Content Include="js\jquery.form.min.js.map" />
+    <Content Include="js\metisMenu.min.js" />
+    <Content Include="js\modernizr-2.8.3.min.js" />
+    <Content Include="js\notify.js" />
+    <Content Include="js\notify.min.js" />
+    <Content Include="js\notify.min.js.gz" />
+    <Content Include="js\notify.min.js.map" />
+    <Content Include="js\select2.full.js" />
+    <Content Include="js\select2.full.min.js" />
+    <Content Include="js\select2.js" />
+    <Content Include="js\select2.min.js" />
+    <Content Include="js\uikit-core.js" />
+    <Content Include="js\uikit-core.min.js" />
+    <Content Include="js\uikit-core.min.js.gz" />
+    <Content Include="js\uikit-core.min.js.map" />
+    <Content Include="js\validator.js" />
+    <Content Include="js\validator.min.js" />
     <Content Include="js\wms.js" />
     <Content Include="web.config" />
   </ItemGroup>

@@ -3,5 +3,5 @@ namespace Core\MVC;
 
 interface IController
 {
-	public function Initialize();
+	public static function Initialize();
 }

@@ -2,7 +2,6 @@
 namespace WMS;
 use Core\Database\Database;
 use Core\Request;
-use WMS\Controller;
 use WMS\Admin\Users\User;
 use Core\Http\Exceptions\NotFoundException;
 
@@ -51,8 +50,9 @@ class WMS
 		}
 
 		$ctrlPrefix = __NAMESPACE__ . '\\Controller\\';
-		if (self::$controller_name == 'WMS-Admin') {
-			$adminUrl = preg_replace('/^[^\\\\]*\\\\*/', '', str_replace('/', '\\', self::$url));
+		//if (self::$controller_name == 'WMS-Admin') {
+			//$adminUrl = preg_replace('/^[^\\\\]*\\\\*/', '', str_replace('/', '\\', self::$url));
+			$adminUrl = str_replace('/', '\\', self::$url);
 			$adminCtrl = preg_replace('/\\\\.*$/', '', $adminUrl);
 			$adminPrams = [];
 			$adminCtrlPrefix = $ctrlPrefix . 'Admin\\';
@@ -90,12 +90,9 @@ class WMS
 			}
 			self::$controller_name = $adminCtrl;
 			self::$parameters = $adminPrams;
-		} else {
-			self::$controller_name = $ctrlPrefix . 'Pages';
-			self::$parameters = explode('/', self::$url);
-		}
+		//} else {
+		//    self::$controller_name = $ctrlPrefix . 'Pages';
+		//    self::$parameters = explode('/', self::$url);
+		//}
 	}
-	//private static function SplitURL()
-	//{
-	//}
 }

@@ -1040,7 +1040,7 @@
 	 */
 	WMS.User = {};
 	WMS.User.CheckLogin = function (success, goHome) {
-		WMS.ajax.action('/WMS-Admin/User', 'loginCheck', {
+		WMS.ajax.action('/User', 'loginCheck', {
 			notify: false,
 			success: function (respond) {
 				WMS.User.isLoggedIn = respond.isLoggedIn;
@@ -1053,7 +1053,7 @@
 					WMS.User.navbarItems.forEach(function (item) {
 						navItems += '<li><a href="' + item.link + '">' + item.label + '</a></li>'
 					});
-					WMS.$.logo.attr('href', '/WMS-Admin');
+					WMS.$.logo.attr('href', '/');
 					userName = WMS.User.data.namePrefix + WMS.User.data.firstName;
 					//if (!goHome)
 					//	WMS.ajax.loadPage();
@@ -1064,7 +1064,7 @@
 				}
 
 				if (goHome)
-					WMS.ajax.loadPage('/WMS-Admin', null, null, true);
+					WMS.ajax.loadPage('/', null, null, true);
 				else
 					WMS.ajax.loadPage();
 
@@ -1109,7 +1109,7 @@
 			},
 			callback: function (result) {
 				if (result) {
-					WMS.ajax.action('/WMS-Admin/User', 'logout', {
+					WMS.ajax.action('/User', 'logout', {
 						success: function () { WMS.User.CheckLogin(null, true); },
 						error: WMS.User.CheckLogin
 					});

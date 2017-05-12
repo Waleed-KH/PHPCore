@@ -12,7 +12,7 @@ class Navigation
 		{
 			case Usr::AdminUser:
 				$navItems = [
-					['label' => '', 'link' => '/']//,
+					['label' => 'Home', 'link' => '/']//,
 				];
 				break;
 		}

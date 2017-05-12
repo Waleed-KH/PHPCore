@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-				<form data-toggle="validator" role="form" class="form-horizontal" action="/WMS-Admin/User/Login" method="post" id="loginForm">
+				<form data-toggle="validator" role="form" class="form-horizontal" action="/User/Login" method="post" id="loginForm">
 					<input type="hidden" name="action" value="login">
 					<div class="form-group">
 						<label for="username" class="col-sm-2 control-label">Username</label>

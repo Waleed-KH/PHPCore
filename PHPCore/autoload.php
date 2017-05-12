@@ -13,8 +13,8 @@ spl_autoload_register(function ($class) {
 
 	$fileName = str_replace('\\', DS, $relativeClass) . '.php';
 
-	if (file_exists(WMS_DIR . $fileName)) {
-		require WMS_DIR . $fileName;
+	if (file_exists(DIR . $fileName)) {
+		require DIR . $fileName;
 	}
 
 	// TODO: Initialize static class
